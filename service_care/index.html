@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="ご自宅での介護を行う際、介護ベッドの搬入に伴い周囲の空間を確保する必要が生まれます。そのため、家具や調度類の整理が必要となります。私たちは実際に現地へうかがい、状況を確認させていただき、ご家族のお話をしっかりとお聞きします。そして不要な家具類を搬出・引き取りすることで、動きやすく隅々までお世話のできる介護空間を創ります。また、介護に伴って手すりの設置、床の段差をなくすフラット化などが必要となりますが、それらの改修工事も承ります。工事費用の助成金を使えるケースも多いので、その申請などに関してもアドバイスと代行を行うことが可能です。他の箇所の改修・リフォームのご要望にもお応えしますので、何でもご相談ください。">
+<meta name="keywords" content="糸平,イトヘイ,itohei,遺品整理,横浜,終活">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>介護に伴う住空間の改良・整理 | 有限会社糸平</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:767px)" href="../css/screen_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:768px)" href="../css/screen_pc.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
+<script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/interface/logo.svg" alt="ITOHEI"><span>地域に根ざして100年</span></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html#home_service_area">サービス一覧</a></li>
+				<li><a href="../aboutus/index.html">企業情報</a></li>
+				<li><a href="../access/index.html">アクセス</a></li>
+			</ul>
+		</nav>
+		<span id="nav_sp"><span></span><span></span></span>
+	</header>
+	<article id="sub_contents_area">
+		<h1><span>Service</span>介護に伴う住空間の<br class="sp">改良・整理</h1>
+		<section id="sub_contents_main">
+			<img src="../img/service_pic02.jpg" alt="介護に伴う住空間の改良・整理">
+			<div>
+				<h2>介護する人・される人の<br>ベストな動線を考えます</h2>
+				<p>
+					ご自宅での介護を行う際、介護ベッドの搬入に伴い周囲の空間を確保する必要が生まれます。そのため、家具や調度類の整理が必要となります。私たちは実際に現地へうかがい、状況を確認させていただき、ご家族のお話をしっかりとお聞きします。そして不要な家具類を搬出・引き取りすることで、動きやすく隅々までお世話のできる介護空間を創ります。また、介護に伴って手すりの設置、床の段差をなくすフラット化などが必要となりますが、それらの改修工事も承ります。工事費用の助成金を使えるケースも多いので、その申請などに関してもアドバイスと代行を行うことが可能です。他の箇所の改修・リフォームのご要望にもお応えしますので、何でもご相談ください。<br>
+					そして、私たちが提携している訪問看護ステーション「非営利活動法人さかえ会 たなごころ看護ステーション」、在宅医療を行っている「横浜あおぞらクリニック」との連携を図り、医療チームと一体型の介護体制をご提供できます。
+				</p>
+			</div>
+		</section>
+		<section id="sub_contents_pricelist">
+			<!-- h2>料金表</h2 -->
+			<p>
+				料金についてはお問い合わせください
+			</p>
+		</section>
+	</article>
+	<footer>
+		<div id="footer_contact_area">
+			<h2>ご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0120225558">0120-225-558</a>
+				<p>
+					電話受付時間　土日祝日除く10：00～18：00<br>
+					FAX：045-623-8909／MAIL：<a href="mailto:info@itohei.jp">info@itohei.jp</a>
+				</p>
+			</address>
+		</div>
+		<div id="footer_copyright_area">
+			<a href="../index.html"><img src="../img/interface/logo_white.svg" alt="ITOHEI"></a>
+			<small>&copy; 2024 Itohei All Rights Reserved.</small>
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	var windowsize = window.matchMedia('screen and (max-width:767px)');
+	function checkBreakPoint(windowsize) {
+		if (windowsize.matches) {
+			$('body>header>nav').css({'display':'none'});
+		} else {
+			$('body>header>nav').css({'display':'block'});
+		}
+	}
+	windowsize.addListener(checkBreakPoint);
+	checkBreakPoint(windowsize);
+	$("#nav_sp").click(function () {
+		$("body>header>nav").slideToggle(300);
+		$(this).toggleClass('open');
+		$(this).addClass('close');
+	});
+});
+
+
+</script>
+</body>
+</html>

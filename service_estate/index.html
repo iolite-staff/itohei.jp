@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="亡くなった方の遺品を整理する際、大切なことが2つあります。ひとつは、残す物と処分する物の仕分け。もうひとつは、遺品の価値です。私たちはお客様のもとにうかがいますので、故人のお話を詳しくお聞かせください。そして遺品査定士と遺品整理士の資格を有するスタッフが遺品の一つひとつを拝見して、残す意思を確認し、価値の査定を行います。また、骨董品、アンティーク品、絵画や彫刻などの美術品がある場合は、専門の鑑定士に依頼して価格を査定します。お客様がその品物を処分なさる場合は、その査定金額を料金から相殺することも可能です。">
+<meta name="keywords" content="糸平,イトヘイ,itohei,遺品整理,横浜,終活">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>遺品整理のご相談 | 有限会社糸平</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:767px)" href="../css/screen_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:768px)" href="../css/screen_pc.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
+<script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/interface/logo.svg" alt="ITOHEI"><span>地域に根ざして100年</span></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html#home_service_area">サービス一覧</a></li>
+				<li><a href="../aboutus/index.html">企業情報</a></li>
+				<li><a href="../access/index.html">アクセス</a></li>
+			</ul>
+		</nav>
+		<span id="nav_sp"><span></span><span></span></span>
+	</header>
+	<article id="sub_contents_area">
+		<h1><span>Service</span>遺品整理のご相談</h1>
+		<section id="sub_contents_main">
+			<img src="../img/service_pic04.jpg" alt="遺品整理のご相談">
+			<div>
+				<h2>価値の判断を専門家が行います</h2>
+				<p>
+					亡くなった方の遺品を整理する際、大切なことが2つあります。ひとつは、残す物と処分する物の仕分け。もうひとつは、遺品の価値です。私たちはお客様のもとにうかがいますので、故人のお話を詳しくお聞かせください。そして遺品査定士と遺品整理士の資格を有するスタッフが遺品の一つひとつを拝見して、残す意思を確認し、価値の査定を行います。また、骨董品、アンティーク品、絵画や彫刻などの美術品がある場合は、専門の鑑定士に依頼して価格を査定します。お客様がその品物を処分なさる場合は、その査定金額を料金から相殺することも可能です。<br>
+					遺品の中には価値の高いお品が含まれていることも多いので、査定は慎重かつ公明に行い、誠意を持ってお客様にお伝えしてご判断を仰ぎます。
+				</p>
+			</div>
+		</section>
+		<section id="sub_contents_pricelist">
+			<!-- h2>料金表</h2 -->
+			<p>
+				料金についてはお問い合わせください
+			</p>
+		</section>
+	</article>
+	<footer>
+		<div id="footer_contact_area">
+			<h2>ご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0120225558">0120-225-558</a>
+				<p>
+					電話受付時間　土日祝日除く10：00～18：00<br>
+					FAX：045-623-8909／MAIL：<a href="mailto:info@itohei.jp">info@itohei.jp</a>
+				</p>
+			</address>
+		</div>
+		<div id="footer_copyright_area">
+			<a href="../index.html"><img src="../img/interface/logo_white.svg" alt="ITOHEI"></a>
+			<small>&copy; 2024 Itohei All Rights Reserved.</small>
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	var windowsize = window.matchMedia('screen and (max-width:767px)');
+	function checkBreakPoint(windowsize) {
+		if (windowsize.matches) {
+			$('body>header>nav').css({'display':'none'});
+		} else {
+			$('body>header>nav').css({'display':'block'});
+		}
+	}
+	windowsize.addListener(checkBreakPoint);
+	checkBreakPoint(windowsize);
+	$("#nav_sp").click(function () {
+		$("body>header>nav").slideToggle(300);
+		$(this).toggleClass('open');
+		$(this).addClass('close');
+	});
+});
+
+
+</script>
+</body>
+</html>

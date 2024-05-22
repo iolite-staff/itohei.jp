@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="今まで捨てられずにしまい込んであったさまざまな物を、新たな人生を送るために選別するのはとても大切なイベントです。選ぶ基準は、「連れていく物」「置いていく物」。ここでもお客様へ寄り添う姿勢を大切に、これまでの人生についてお話をうかがい、お部屋にある物たちをどうするかの決断をお手伝いします。一概に「捨てましょう」ではなく、これから一緒に暮らす物かどうかをご一緒に考えます。">
+<meta name="keywords" content="糸平,イトヘイ,itohei,遺品整理,横浜,終活">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>身の回り品の整理に関するご相談やお手伝い | 有限会社糸平</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:767px)" href="../css/screen_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:768px)" href="../css/screen_pc.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
+<script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/interface/logo.svg" alt="ITOHEI"><span>地域に根ざして100年</span></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html#home_service_area">サービス一覧</a></li>
+				<li><a href="../aboutus/index.html">企業情報</a></li>
+				<li><a href="../access/index.html">アクセス</a></li>
+			</ul>
+		</nav>
+		<span id="nav_sp"><span></span><span></span></span>
+	</header>
+	<article id="sub_contents_area">
+		<h1><span>Service</span>身の回り品の整理に関するご相談やお手伝い</h1>
+		<section id="sub_contents_main">
+			<img src="../img/service_pic03.jpg" alt="身の回り品の整理に関するご相談やお手伝い">
+			<div>
+				<h2>連れて行く物と置いていく物、<br>どちらも大切に</h2>
+				<p>
+					今まで捨てられずにしまい込んであったさまざまな物を、新たな人生を送るために選別するのはとても大切なイベントです。選ぶ基準は、「連れていく物」「置いていく物」。ここでもお客様へ寄り添う姿勢を大切に、これまでの人生についてお話をうかがい、お部屋にある物たちをどうするかの決断をお手伝いします。一概に「捨てましょう」ではなく、これから一緒に暮らす物かどうかをご一緒に考えます。<br>
+					置いていく物は私たちが回収しますが、それらを査定し、古物として価値のあるものについてはその大まかな市場価格に基づき、買い取らせていただきます。処分する物に関しては、リユースを基本として最終処理場へ持ち込む廃棄物を極力減らすよう努力します。お客様の気持ちと、資源や環境保全のどちらにも貢献できる整理を目指していきます。
+				</p>
+			</div>
+		</section>
+		<section id="sub_contents_pricelist">
+			<!-- h2>料金表</h2 -->
+			<p>
+				料金についてはお問い合わせください
+			</p>
+		</section>
+	</article>
+	<footer>
+		<div id="footer_contact_area">
+			<h2>ご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0120225558">0120-225-558</a>
+				<p>
+					電話受付時間　土日祝日除く10：00～18：00<br>
+					FAX：045-623-8909／MAIL：<a href="mailto:info@itohei.jp">info@itohei.jp</a>
+				</p>
+			</address>
+		</div>
+		<div id="footer_copyright_area">
+			<a href="../index.html"><img src="../img/interface/logo_white.svg" alt="ITOHEI"></a>
+			<small>&copy; 2024 Itohei All Rights Reserved.</small>
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	var windowsize = window.matchMedia('screen and (max-width:767px)');
+	function checkBreakPoint(windowsize) {
+		if (windowsize.matches) {
+			$('body>header>nav').css({'display':'none'});
+		} else {
+			$('body>header>nav').css({'display':'block'});
+		}
+	}
+	windowsize.addListener(checkBreakPoint);
+	checkBreakPoint(windowsize);
+	$("#nav_sp").click(function () {
+		$("body>header>nav").slideToggle(300);
+		$(this).toggleClass('open');
+		$(this).addClass('close');
+	});
+});
+
+
+</script>
+</body>
+</html>

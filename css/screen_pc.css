@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* INTERFACE */
+
+body>header{
+	max-width:1400px;
+	height:80px;
+	margin:0 auto;
+	position:relative;
+}
+
+body>header h1,
+body>header>a{
+	margin:0;
+	display:flex;
+	align-items:center;
+	position:absolute;
+	top:5px;
+	left:40px;
+}
+
+body>header>a:hover{
+	text-decoration:none;
+}
+
+body>header h1 img,
+body>header>a img{
+	width:80px;
+	margin:0 5px 0 0;
+}
+
+body>header h1 span,
+body>header>a span{
+	font-size:13px;
+	font-weight:300;
+	color:#4f8fcc;
+}
+
+body>header nav ul{
+	max-width:600px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	margin:0;
+	padding:25px 0 30px;
+	list-style-type:none;
+	font-family: "Zen Maru Gothic", serif;
+	font-size:16px;
+	line-height:1;
+	background:linear-gradient(90deg, #5ca1e5, #98d9ad);
+	box-shadow:5px 5px 20px 5px rgba(200, 188, 155, 0.25);
+	border-radius:0 0 30px 30px;
+	position:absolute;
+	top:0;
+	right:40px;
+}
+
+body>header nav ul li{
+	padding:0 25px;
+}
+
+body>header nav ul li a:link,
+body>header nav ul li a:visited{
+	color:#fff;
+}
+
+@media only screen and (max-width:900px){
+	body>header h1,
+	body>header>a{
+		left:20px;
+	}
+	body>header nav ul{
+		max-width:480px;
+		right:20px;
+	}
+	
+	body>header nav ul li{
+		padding:0 20px;
+	}
+}
+
+body>footer{
+	margin:50px 0 0;
+	padding:15% 0 0;
+	text-align:center;
+	background-image:url("../img/interface/shape_ito.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:top center;
+}
+
+#footer_contact_area{
+	max-width:600px;
+	margin:0 auto;
+	padding:0 120px 40px;
+	background-image:url("../img/message_staff.png");
+	background-repeat:no-repeat;
+	background-size:280px;
+	background-position:bottom right;
+}
+
+#footer_contact_area h2{
+	margin:0 0 20px;
+	font-family: "Zen Maru Gothic", serif;
+	font-size:20px;
+	color:#165193;
+}
+
+#footer_contact_area address{
+	font-style:normal;
+}
+
+#footer_contact_area address>a{
+	display:inline-block;
+	margin:0 0 10px;
+	padding:0 5px;
+	font-size:38px;
+	font-weight:400;
+	line-height:1;
+	color:#165193;
+	background:linear-gradient(transparent 65%, #fdce5a 65%);
+}
+
+#footer_contact_area address p{
+	margin:0;
+	font-size:14px;
+	color:#165193;
+}
+
+#footer_copyright_area{
+	margin:0;
+	padding:80px 20px;
+	background:linear-gradient(90deg, #5ca1e5, #98d9ad);
+}
+
+#footer_copyright_area a img{
+	width:80px;
+	margin:0 0 30px;
+}
+
+#footer_copyright_area small{
+	display:block;
+	font-family:Verdana,sans-serif;
+	font-size:10px;
+	color:#fff;
+}
+
+@media only screen and (max-width:900px){
+	#footer_contact_area{
+		padding:0 90px 40px;
+		background-size:250px;
+	}
+
+}

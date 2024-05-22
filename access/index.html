@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="糸平へのアクセスをご紹介します。">
+<meta name="keywords" content="糸平,イトヘイ,itohei,遺品整理,横浜,終活">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>アクセス | 有限会社糸平</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:767px)" href="../css/screen_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:768px)" href="../css/screen_pc.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
+<script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/interface/logo.svg" alt="ITOHEI"><span>地域に根ざして100年</span></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html#home_service_area">サービス一覧</a></li>
+				<li><a href="../aboutus/index.html">企業情報</a></li>
+				<li><a href="../access/index.html">アクセス</a></li>
+			</ul>
+		</nav>
+		<span id="nav_sp"><span></span><span></span></span>
+	</header>
+	<article id="sub_contents_area">
+		<h1><span>Access</span>アクセス</h1>
+		<section id="sub_contents_main" class="access">
+			<div class="txt">
+				<h2>有限会社 糸平</h2>
+				<table class="basic">
+					<tr><th>住所</th><td>〒231-0845　横浜市中区立野1</td></tr>
+					<tr><th>受付時間</th><td>土日祝日除く10：00～18：00</td></tr>
+					<tr><th>連絡先</th><td>TEL 045-623-8502／FAX 045-623-8909</td></tr>
+				</table>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1625.4718837508606!2d139.64832295682297!3d35.43142297863058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cd8a299c995%3A0xf0f5a59e9db51e1e!2z44CSMjMxLTA4NDUg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy656uL6YeO77yR!5e0!3m2!1sja!2sjp!4v1712896171768!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+		<div id="sub_contents_overview" class="access">
+			<section>
+				<h2>電車の場合</h2>
+				<p>
+					JR京浜東北・根岸線山手駅徒歩7分
+				</p>
+			</section>
+			<section>
+				<h2>自動車の場合</h2>
+				<p>
+					首都高速道路三溪園、新山下出口より各約7分
+				</p>
+			</section>
+		</div>
+	</article>
+	<footer>
+		<div id="footer_contact_area">
+			<h2>ご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0120225558">0120-225-558</a>
+				<p>
+					電話受付時間　土日祝日除く10：00～18：00<br>
+					FAX：045-623-8909／MAIL：<a href="mailto:info@itohei.jp">info@itohei.jp</a>
+				</p>
+			</address>
+		</div>
+		<div id="footer_copyright_area">
+			<a href="../index.html"><img src="../img/interface/logo_white.svg" alt="ITOHEI"></a>
+			<small>&copy; 2024 Itohei All Rights Reserved.</small>
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	var windowsize = window.matchMedia('screen and (max-width:767px)');
+	function checkBreakPoint(windowsize) {
+		if (windowsize.matches) {
+			$('body>header>nav').css({'display':'none'});
+		} else {
+			$('body>header>nav').css({'display':'block'});
+		}
+	}
+	windowsize.addListener(checkBreakPoint);
+	checkBreakPoint(windowsize);
+	$("#nav_sp").click(function () {
+		$("body>header>nav").slideToggle(300);
+		$(this).toggleClass('open');
+		$(this).addClass('close');
+	});
+});
+
+
+</script>
+</body>
+</html>

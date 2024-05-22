@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="自分が最期を迎える前に、死後のことをあらかじめ手配しておくことが、終活です。周囲のご家族などに迷惑をかけないため、そして自分の人生を振り返り整理するのが目的となります。その際、身のまわりの品々をどうするかという決断に、私たちが寄り添います。思い入れの強い物、手放しても惜しくない物、家族に迷惑がかかる物など、判断するのは大変ですが、ご納得いくようなアドバイスを私たちが行います。終活に当たって「エンディングノート」を書く場合も多いと思いますが、身のまわりの品々をどうするかも、そこに記載しておくとよいでしょう。私たちは、それら全般のお手伝い、アドバイスもさせていただきます。">
+<meta name="keywords" content="糸平,イトヘイ,itohei,遺品整理,横浜,終活">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>終活のお手伝い | 有限会社糸平</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:767px)" href="../css/screen_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:768px)" href="../css/screen_pc.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
+<script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/interface/logo.svg" alt="ITOHEI"><span>地域に根ざして100年</span></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html#home_service_area">サービス一覧</a></li>
+				<li><a href="../aboutus/index.html">企業情報</a></li>
+				<li><a href="../access/index.html">アクセス</a></li>s
+			</ul>
+		</nav>
+		<span id="nav_sp"><span></span><span></span></span>
+	</header>
+	<article id="sub_contents_area">
+		<h1><span>Service</span>終活のお手伝い</h1>
+		<section id="sub_contents_main">
+			<img src="../img/service_pic05.jpg" alt="終活のお手伝い">
+			<div>
+				<h2>後の家族のことを思いやって</h2>
+				<p>
+					自分が最期を迎える前に、死後のことをあらかじめ手配しておくことが、終活です。周囲のご家族などに迷惑をかけないため、そして自分の人生を振り返り整理するのが目的となります。その際、身のまわりの品々をどうするかという決断に、私たちが寄り添います。思い入れの強い物、手放しても惜しくない物、家族に迷惑がかかる物など、判断するのは大変ですが、ご納得いくようなアドバイスを私たちが行います。終活に当たって「エンディングノート」を書く場合も多いと思いますが、身のまわりの品々をどうするかも、そこに記載しておくとよいでしょう。私たちは、それら全般のお手伝い、アドバイスもさせていただきます。<br>
+					不要となる物が決まりましたら、改めてうかがい、搬出いたします。遺品整理と同じく、査定が必要となる場合は当社の遺品査定士、あるいは外部の美術鑑定士などの専門知識を持った人間が、査定させていただきます。
+				</p>
+			</div>
+		</section>
+		<section id="sub_contents_pricelist">
+			<!-- h2>料金表</h2 -->
+			<p>
+				料金についてはお問い合わせください
+			</p>
+		</section>
+	</article>
+	<footer>
+		<div id="footer_contact_area">
+			<h2>ご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0120225558">0120-225-558</a>
+				<p>
+					電話受付時間　土日祝日除く10：00～18：00<br>
+					FAX：045-623-8909／MAIL：<a href="mailto:info@itohei.jp">info@itohei.jp</a>
+				</p>
+			</address>
+		</div>
+		<div id="footer_copyright_area">
+			<a href="../index.html"><img src="../img/interface/logo_white.svg" alt="ITOHEI"></a>
+			<small>&copy; 2024 Itohei All Rights Reserved.</small>
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	var windowsize = window.matchMedia('screen and (max-width:767px)');
+	function checkBreakPoint(windowsize) {
+		if (windowsize.matches) {
+			$('body>header>nav').css({'display':'none'});
+		} else {
+			$('body>header>nav').css({'display':'block'});
+		}
+	}
+	windowsize.addListener(checkBreakPoint);
+	checkBreakPoint(windowsize);
+	$("#nav_sp").click(function () {
+		$("body>header>nav").slideToggle(300);
+		$(this).toggleClass('open');
+		$(this).addClass('close');
+	});
+});
+
+
+</script>
+</body>
+</html>
