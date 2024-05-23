@@ -228,6 +228,16 @@ body{
 	line-height:1.6;
 }
 
+#sub_contents_area #sub_contents_overview .greeting{
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+}
+#sub_contents_area #sub_contents_overview .greeting img{
+	max-width: 300px;
+	margin: 0 50px 50px 50px;
+	transform: translateX(100%);
+}
 
 @media only screen and (max-width:900px){
 	#sub_contents_area{
@@ -814,4 +824,5 @@ body{
 		margin:10px 0;
 	}
 }
+
 
