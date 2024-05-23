@@ -232,11 +232,11 @@ body{
 	display: block;
 	box-sizing: border-box;
 	margin-bottom: 100px;
+	text-align: center;
 }
 #sub_contents_area #sub_contents_overview .greeting img{
-	max-width: 300px;
-	margin: 0 50px 50px 50px;
-	transform: translateX(100%);
+	max-width: 285px;
+	margin-bottom: 50px;
 }
 
 @media only screen and (max-width:900px){
