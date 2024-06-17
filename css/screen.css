@@ -826,3 +826,17 @@ body{
 }
 
 
+ul.slide-items li,
+ul.slide-items_2 li{
+	list-style: none;
+}
+ul.slide-items li img,
+ul.slide-items_2 li img{
+	width: 200px;
+	border-radius: 10px;
+}
+.slide-items,
+.slide-items_2{
+	margin: 0;
+	padding: 0;
+}

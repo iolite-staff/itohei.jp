@@ -15,6 +15,20 @@
 <link rel="icon" type="image/png" href="../favicon-.png" sizes="16x16">
 <link rel="icon" type="image/png" href="../favicon.png" sizes="32x32">
 <script type="text/javascript" src="../lib/jquery/jquery-3.7.1.min.js"></script>
+<!-- slick css -->
+<link rel="stylesheet" href="../lib/slick/slick.css">
+<link rel="stylesheet" href="../lib/slick/slick-theme.css">
+<link rel="stylesheet" href="../lib/style.css">
+<!-- slick js -->
+<script src="../lib/slick/slick.min.js"></script>
+<script src="../lib/main.js"></script>
+<script>
+	$(".slide-items").slick({
+		autoplay: true, // 自動再生
+		autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+		infinite: true, // 無限スライド
+	});
+</script>
 </head>
 <body>
 	<header>
@@ -79,6 +93,14 @@
 					</td></tr>
 				</table>
 			</section>
+			<ul class="slide-items">
+				<li><img src="./img/souko_1.JPG" alt=""></li>
+				<li><img src="./img/souko_2.JPG" alt=""></li>
+				<li><img src="./img/souko_3.JPG" alt=""></li>
+				<li><img src="./img/souko_4.JPG" alt=""></li>
+				<li><img src="./img/souko_5.JPG" alt=""></li>
+				<li><img src="./img/souko_6.JPG" alt=""></li>
+			  </ul>
 			<section>
 				<h2>資格</h2>
 				<ul class="license">
@@ -135,6 +157,13 @@
 					<tr><th>令和2年12月</th><td>環境大臣より環境大臣表彰を受賞</td></tr>
 				</table>
 			</section>
+			<ul class="slide-items_2" dir="rtl">
+				<li><img src="./img/sagyou_1.JPG" alt=""></li>
+				<li><img src="./img/sagyou_2.JPG" alt=""></li>
+				<li><img src="./img/sagyou_3.JPG" alt=""></li>
+				<li><img src="./img/sagyou_4.JPG" alt=""></li>
+				<li><img src="./img/sagyou_5.JPG" alt=""></li>
+			  </ul>
 		</div>
 	</article>
 	<footer>
@@ -172,7 +201,50 @@ $(document).ready(function(){
 	});
 });
 
+$(function(){
+  $('.slide-items').slick({
+    autoplay: true, // 自動でスクロール
+    autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定
+    speed: 9000, // スライドが流れる速度を設定
+    cssEase: "linear", // スライドの流れ方を等速に設定
+    slidesToShow: 4, // 表示するスライドの数
+    swipe: false, // 操作による切り替えはさせない
+    arrows: false, // 矢印非表示
+    pauseOnFocus: false, // スライダーをフォーカスした時にスライドを停止させるか
+    pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3, // 画面幅750px以下でスライド3枚表示
+        }
+      }
+    ]
+  });
+});
 
+$(function(){
+  $('.slide-items_2').slick({
+    autoplay: true, // 自動でスクロール
+    autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定
+    speed: 9000, // スライドが流れる速度を設定
+    cssEase: "linear", // スライドの流れ方を等速に設定
+    slidesToShow: 4, // 表示するスライドの数
+    swipe: false, // 操作による切り替えはさせない
+    arrows: false, // 矢印非表示
+    pauseOnFocus: false, // スライダーをフォーカスした時にスライドを停止させるか
+    pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
+	rtl: true, // スライダーを左から右に流す（逆向き）
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3, // 画面幅750px以下でスライド3枚表示
+        }
+      }
+    ]
+  });
+});
 </script>
 </body>
 </html>
