@@ -842,3 +842,12 @@ ul.slide-items_2 li img{
 	margin: 0;
 	padding: 0;
 }
+
+#sub_contents_area table{
+	font-family: "Zen Maru Gothic", serif;
+	margin: auto;
+}
+
+#sub_contents_area table td{
+	padding-left: 30px;
+}
