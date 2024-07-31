@@ -144,8 +144,11 @@ body{
 	line-height:1.3;
 	color:#114278;
 }
-
-#sub_contents_area #sub_contents_pricelist h2{
+#sub_contents_area #sub_contents_pricelist{
+	margin-bottom: 80px;	
+}
+#sub_contents_area #sub_contents_pricelist h2,
+#sub_contents_area #sub_contents_payment h2{
 	margin:0 0 40px;
 	text-align:center;
 	font-family:"Noto Serif JP", serif;
