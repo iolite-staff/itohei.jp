@@ -167,15 +167,3 @@ body>footer{
 	font-size:10px;
 	color:#fff;
 }
-@media screen and (min-width: 481px){
-	#sub_contents_area #sub_contents_payment{
-		width: 70%;
-		margin: auto;
-	}	
-}
-@media screen and (max-width: 48px){
-	#sub_contents_area #sub_contents_payment{
-		width: 100%;
-		margin: auto;
-	}
-}
