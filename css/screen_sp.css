@@ -167,3 +167,13 @@ body>footer{
 	font-size:10px;
 	color:#fff;
 }
+
+#sub_contents_sdgs div.sdgs_detail{
+	display: block;
+}
+#sub_contents_sdgs div.sdgs_detail>div{
+	margin-bottom: 20px;
+}
+#sub_contents_sdgs div.sdgs_detail div.icon_area img{
+	max-width: 65px;
+}

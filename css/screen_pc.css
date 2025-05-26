@@ -156,4 +156,13 @@ body>footer{
 .slick-list{
 	width: 1000px;
 }
-
+#sub_contents_sdgs div.sdgs_detail{
+	display: flex;
+	justify-content: space-between;
+}
+#sub_contents_sdgs div.sdgs_detail div.text_area{
+	margin-right: 50px;
+}
+#sub_contents_sdgs div.sdgs_detail div.icon_area img{
+	max-width: 100px;
+}

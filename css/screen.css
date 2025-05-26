@@ -166,8 +166,12 @@ body{
 #sub_contents_area #sub_contents_overview h2{
 	text-align:center;
 }
+#sub_contents_area #sub_contents_sdgs {
+	text-align:left;
+}
 
-#sub_contents_area #sub_contents_main p{
+#sub_contents_area #sub_contents_main p,
+#sub_contents_area #sub_contents_sdgs p{
 	margin:0 0 40px;
 	text-align:justify;
 	font-family:"Noto Serif JP", serif;
@@ -862,4 +866,32 @@ ul.slide-items_2 li img{
 }
 #sub_contents_area #sub_contents_payment ul li{
 	list-style: none;
+}
+
+
+#sub_contents_area section.sdgs_intro{
+	max-width: none !important;
+}
+#sub_contents_sdgs div.sdgs_detail>div{
+	max-width: 700px;
+	min-width: 285px;
+}
+#sub_contents_sdgs div.sdgs_detail>div>img{
+	width: 100%;
+	max-width: 400px;
+	border-radius: 30px;
+}
+
+#sub_contents_sdgs section:not(nth-last-child){
+	margin-bottom: 80px;
+}
+#sub_contents_area section.sdgs_intro div.poster_area{
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
+}
+#sub_contents_area section.sdgs_intro img{
+	box-shadow: 2px 6px 17px -15px;
+	width: 100%;
 }
